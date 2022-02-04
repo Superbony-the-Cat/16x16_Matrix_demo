@@ -11,7 +11,7 @@
 #define WS2812_pin 8// only digital pin 8 works right now
 #define numberOfLEDs 256// total number of RGB LEDs
 
-#define kMatrixWidth 16
+//#define kMatrixWidth 16
 byte RGB[768];//take your number of LEDs and multiply by 3    3x256 =  768
 
 // FUNCTIONS HERE
