@@ -115,7 +115,7 @@ void RGB_update(int LED, byte RED, byte GREEN, byte BLUE) {
 
         }
         interrupts();//enable the interrupts
-        delayMicroseconds(55); // min delay
+        delayMicroseconds(80); // min delay
 // all done!
 }//void RGB_update
 
@@ -144,12 +144,12 @@ int B = 255;
 
         RGB_update(-1, 0, 0, 0);
         delay(1000);
-        clearLEDs();
-        RGB_update(-1, 0, 0, 0);
-        delay(1000);
+       // clearLEDs();
+       // RGB_update(-1, 0, 0, 0);
+       // delay(1000);
 
         for (int i = 0; i < 256; i++) {
-                mapLEDXY(0, 0, i, 0, 0); mapLEDXY(0, 15, i, 0, 0); mapLEDXY(1, 1, i, 0, 0); // x,y , R ,G , B  // R= i
+                mapLEDXY(0, 0, i, 0, 0); mapLEDXY(0, 14, i, 0, 0); mapLEDXY(1, 1, i, 0, 0); // x,y , R ,G , B  // R= i
                 mapLEDXY(1, 14, i, 0, 0); mapLEDXY(2, 2, i, 0, 0); mapLEDXY(2, 13, i, 0, 0);
                 mapLEDXY(3, 3, i, 0, 0); mapLEDXY(3, 12, i, 0, 0); mapLEDXY(4, 4, i, 0, 0);
                 mapLEDXY(4, 11, i, 0, 0); mapLEDXY(5, 5, i, 0, 0); mapLEDXY(5, 10, i, 0, 0);
@@ -165,7 +165,7 @@ int B = 255;
         }
         delay(1000);
         for (int i = 255; i >= 0; i--) {
-                mapLEDXY(0, 0, i, 0, 0); mapLEDXY(0, 15, i, 0, 0); mapLEDXY(1, 1, i, 0, 0); // x,y , R ,G , B  // R = i
+                mapLEDXY(0, 0, i, 0, 0); mapLEDXY(0, 14, i, 0, 0); mapLEDXY(1, 1, i, 0, 0); // x,y , R ,G , B  // R = i
                 mapLEDXY(1, 14, i, 0, 0); mapLEDXY(2, 2, i, 0, 0); mapLEDXY(2, 13, i, 0, 0);
                 mapLEDXY(3, 3, i, 0, 0); mapLEDXY(3, 12, i, 0, 0); mapLEDXY(4, 4, i, 0, 0);
                 mapLEDXY(4, 11, i, 0, 0); mapLEDXY(5, 5, i, 0, 0); mapLEDXY(5, 10, i, 0, 0);
