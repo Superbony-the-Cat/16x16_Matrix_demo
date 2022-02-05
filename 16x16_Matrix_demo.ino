@@ -182,7 +182,13 @@ int B = 255;
         delay(1000);
       //  clearLEDs();
       //  RGB_update(-1, 0, 0, 0);
-
+       
+        RGB[1]= 0xff ;  // ff = 255     1.Ecke  rot
+        RGB[46]= 0xff ;  //             2.Ecke   
+        RGB[721]= 0xff ; //             3.Ecke
+        RGB[766]= 0xff ; //             4.Ecke
+        RGB_update(-1, 0, 0, 0);
+        delay(1000); //                 delay 1 sekunde
 
 
 }//loop
