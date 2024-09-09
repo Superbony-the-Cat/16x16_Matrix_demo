@@ -9,8 +9,8 @@
 // https://youtu.be/f-Uvjt281DE
 
 //VARIABLES AND DEFINES HERE - NEEDED BY THE WS2812 DRIVER CODE
-#define WS2812_pin 8// only digital pin 8 works right now
-#define numberOfLEDs 256// total number of RGB LEDs
+#define WS2812_pin 8     // only digital pin 8 works right now
+#define numberOfLEDs 256 // total number of RGB LEDs
 
 //#define kMatrixWidth 16
 byte RGB[768];//take your number of LEDs and multiply by 3    3x256 =  768
